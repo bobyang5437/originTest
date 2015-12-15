@@ -10,10 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.groupTableViewBackgroundColor()
+        
+        label = UILabel()
+        label.frame = CGRectMake(50, 50, 100, 100)
+        label.backgroundColor = UIColor.redColor()
+        label.text = "this is test"
+        label.textAlignment = .Center
+        self.view.addSubview(label)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
